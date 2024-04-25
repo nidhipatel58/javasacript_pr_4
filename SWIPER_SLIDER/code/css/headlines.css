@@ -1,0 +1,12 @@
+body {
+    background-image: url(../img/h1.jpg);
+    text-align: center;
+    color:#fff;
+    padding-top:10em;
+  }
+  
+  * { color:#fff; text-decoration: none;}
+  a{
+    font-size: 62px;
+    
+  }

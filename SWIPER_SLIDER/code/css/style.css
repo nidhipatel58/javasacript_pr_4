@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #333;
+    --text: #FFF;
+    --highlight: #39AC4C;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+.my-5{
+    margin-top: 5%;
+    margin-left: 34%;
+}
+
+.container {
+    max-width: 1320px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+     /* =============HEADER============== */
+
+header {
+    width: 100%;
+    background-color: cadetblue;
+    box-shadow: 0 5px 5px rgba(94, 98, 106, 0.3);
+}
+
+header h1 {
+    font-size: 40px;
+    color:#FFF ;
+    text-decoration: underline;
+    padding-left: 35px;
+
+}
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .row ul {
+    display: flex;
+    padding: 0;
+}
+
+header .row ul li {
+    padding: 18px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFF;
+    text-decoration: underline;
+}
+
+
+
+.head-btn {
+    display: none;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 8px;
+}
+
+.slide {
+    top: 99px;
+    left: 0;
+    opacity: 1;
+}
+
+@media (max-width:992px) {
+    .head-btn {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 10px 0px;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    header nav {
+        position: fixed;
+        top: 200px;
+        left: 0;
+        transition: all 1s;
+        width: 100%;
+        opacity: 0;
+    }
+
+    header nav ul li {
+        padding: 10px 20px;
+
+    }
+
+    header .row ul li {
+        color: #000;
+    }
+
+}
+
+ .space{
+  margin-top: 0;
+ }
+
+
+
+  /* ------------------fancy-gallery------------------- */
+
+  .gallery{
+    column-count:4;
+    gap: 10px;
+  }
+
+  
+.gallery div{
+  margin-bottom: 10px;
+}
+
+  
+  
+/* ===================accordian=================== */
+
+.ui-state-active{
+  background-color: #23a2f6;
+  color:#fff;
+  border: #23a2f6;
+}

@@ -1,0 +1,46 @@
+body, html {
+    padding: 0;
+    margin: 0;
+	 overscroll-behavior: none;
+	 overflow: hidden;
+}
+
+  .links {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+	 background-color: white;
+	 padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+a:hover {
+    text-decoration: underline;
+}
+a img.icon {
+    display: inline-block;
+    height: 1em;
+    margin: 0 0 -0.1em 0.3em;
+}
+
+
+h1{
+  font-family: 'Roboto', sans-serif;
+}
+
+#changingText {
+  color: #ffd166;
+  border-right: 1px solid black;
+  animation: cursoranim 1s linear infinite;
+}
+
+@keyframes cursoranim {
+  50% {
+    border-right: 1px solid rgba(0, 0, 0, 0);
+  }
+}
